@@ -1,79 +1,339 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Flymed-orcid-page : Flysheet Med-Informatics ORCID Webpage" />
+<head>
+<!-- Standard Meta -->
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<!-- Site Properities -->
+<title>飛資得 ORCID 整合解決方案 | 飛資得醫學資訊</title>
+<meta name="description" content="飛資得醫學提供輔導顧問與解決方案協助您的單位機構導入 ORCID，現在就與我們連繫！" />
 
-    <title>Flymed-orcid-page</title>
-  </head>
+<!-- Web Font -->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
 
-  <body>
+<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="css/semantic.css">
+<link rel="stylesheet" type="text/css" href="css/homepage.css">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/FlyMed/flymed-orcid-page">View on GitHub</a>
+<!-- Javascript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+<script src="script/semantic.js"></script>
+<script src="script/homepage.js"></script>
+<script src="script/jquery.localScroll.min.js"></script>
+<script src="script/jquery.scrollTo.min.js"></script>
 
-          <h1 id="project_title">Flymed-orcid-page</h1>
-          <h2 id="project_tagline">Flysheet Med-Informatics ORCID Webpage</h2>
+<!-- Social Sharing Meta
+================================================== -->
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="首頁 - 飛資得 ORCID 整合解決方案 | 飛資得醫學資訊">
+<meta itemprop="description" content="飛資得醫學提供輔導顧問與解決方案協助您的單位機構導入 ORCID，現在就與我們連繫！">
+<meta itemprop="image" content="">
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/FlyMed/flymed-orcid-page/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/FlyMed/flymed-orcid-page/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@FlysheetORCID">
+<meta name="twitter:creator" content="@FlysheetMed">
+<meta name="twitter:title" content="首頁 - 飛資得 ORCID 整合解決方案 | 飛資得醫學資訊">
+<meta name="twitter:description" content="飛資得醫學提供輔導顧問與解決方案協助您的單位機構導入 ORCID，現在就與我們連繫！"><!-- 200 字元 -->
+<meta name="twitter:image" content="">
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<!-- Open Graph data -->
+<meta property="og:title" content="" />
+<meta property="og:type" content="" />
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="" />
+<meta property="profile:first_name" content="" />
+<meta property="profile:last_name" content="" />
+<meta property="fb:admins" content="" />
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+</head>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<body id="home">
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+	<!-- Top Section / Start -->
+	<div class="ui inverted page grid masthead segment">
+		<div class="column">
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+			<!-- Top Menu / Start -->
+			<div class="inverted secondary pointing ui menu">
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+				<!-- Title -->
+				<div class="header item"><h1>飛資得 ORCID 整合解決方案</h1></div>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+				<!-- Menu / Start -->
+				<div class="right menu">
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+					<!-- Mobile Menu -->
+					<div class="ui top right pointing mobile dropdown link item">
+					選單
+						<i class="dropdown icon"></i>
+						<div class="menu">
+							<a class="item">Classes</a>
+							<a class="item">Cocktail Hours</a>
+							<a class="item">Community</a>
+						</div>
+					</div>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+					<!-- Desktop Menu -->
+					<!-- <a class="item">我們的服務</a> -->
+					<!-- <a class="item">成功案例</a> -->
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+					<div class="ui dropdown link item">
+					認識 ORCID
+						<i class="dropdown icon"></i>
+						<div class="menu">
+							<a class="item" href="http://orcid.org/about/what-is-orcid">何謂 ORCID</a>
+							<a class="item" href="http://orcid.org/about/community">ORCID 社群</a>
+							<a class="item" href="http://orcid.org/about/membership">會員與服務</a>
+							<a class="item" href="http://orcid.org/about/news">新聞</a>
+							<a class="item" href="http://orcid.org/about/events">活動</a>
+						</div>
+					</div>
+				</div>
+				<!-- Menu / End -->
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+			</div>
+			<!-- Top Menu / End -->
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+			<!-- Banner Image -->
+			<img src="images/ORCID-FlyMed-Services.png" class="ui large image">
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Flymed-orcid-page maintained by <a href="https://github.com/FlyMed">FlyMed</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+			<!-- Banner / Start -->
+			<div class="ui hidden transition information">
 
-    
+				<!-- Banner Title -->
+				<h1 class="ui inverted header">從 ORCID 掌握您機構的學術研究</h1>
 
-  </body>
+				<!-- Banner Text -->
+				<p>當愈來愈多的學術研究人員註冊了 ORCID、大學開始評估將 ORCID 與校內系統整合，以及各大國際出版社紛紛要求投稿需要附上 ORCID 時，您的機構該如何應用與整合 ORCID 才能與國際接軌呢？</p>
+			
+				<!-- Banner Button / Start -->
+				<a href="#signup-section">
+					<div class="large basic inverted animated fade ui button">
+						<div class="visible content">了解更多</div>
+						<div class="hidden content">本月最新</div>
+					</div>
+				</a>
+				<!-- Banner Button / End -->
+
+			</div>
+			<!-- Banner / End -->
+
+		</div>
+	</div>
+	<!-- Top Section / End -->
+
+	<!-- Service Section / Start -->
+	<div class="ui page grid overview segment">
+
+		<!-- Empty Column for Layout -->
+		<div class="ui two wide column"></div>
+
+		<!-- Service Column / Start -->
+		<div class="twelve wide column">
+			<div class="ui three column center aligned stackable divided grid">
+
+				<!-- Column 1 -->
+				<div class="column">
+					<div class="ui icon header">
+						<i class="circular chat outline link icon"></i>
+						顧問規劃 
+					</div>
+					<p>提供國內外成功案例分析、現有系統環境掃描、協助與 ORCID 官方聯繫，並依照您機構的需求規劃最適合的方案。</p>
+					<p><a class="ui teal right labeled icon button" href="#">案例分享 <i class="right long arrow icon"></i></a></p>
+				</div>
+
+				<!-- Column 2 -->
+				<div class="column">
+					<div class="ui icon header">
+						<i class="circular code link icon"></i>
+						技術服務
+					</div>
+					<p>提供自 API 應用實例、網頁嵌入小工具至完全客製化系統開發等各種整合應用服務，協助您降低開發成本。</p>
+					<p><a class="ui teal right labeled icon button" href="#">服務方案 <i class="right long arrow icon"></i></a></p>
+				</div>
+
+				<!-- Column 3 -->
+				<div class="column">
+					<div class="ui icon header">
+						<i class="circular dashboard link icon"></i>
+						效益分析
+					</div>
+					<p>有效掌握您機構內的學術產出與研究人員動態，加強學術成果曝光並提升學術研究效益與競爭力。</p>
+					<p><a class="ui teal right labeled icon button" href="#">檢視成果 <i class="right long arrow icon"></i></a></p>
+				</div>
+
+			</div>
+		</div>
+		<!-- Service Column / End -->
+	</div>
+	<!-- Service Section / End -->
+
+	<!-- Signup Section / Started -->
+	<div id="signup-section" class="ui inverted page grid stackable relaxed feature segment">
+
+		<!-- Section Title -->
+		<div class="row">
+			<div class="column">
+				<h1 class="center aligned ui header">本月最新</h1>
+			</div>
+		</div>
+		
+		<!-- Section Content / Start -->
+		<div class="row">
+
+			<!-- Section Intro / Start -->
+			<div class="ten wide column">
+
+				<!-- Title -->
+				<h2 class="ui header">你現在就該知道關於 ORCID 的十件事</h2>
+
+				<!-- Text -->
+				<p>全球各大出版社、研究出資單位以及研究機構皆已採用 ORCID。</p>
+				<p>超過一千本期刊，包含由 <a href="http://blogs.plos.org/plos/2013/09/stay-unique-plos-introduces-orcid-identifiers/" alt="PLOS Blogs: Stay Unique – PLOS introduces ORCID Identifiers" title="PLOS Blogs: Stay Unique – PLOS introduces ORCID Identifiers" target="_blank">PLOS</a>、<a href="http://www.nature.com/press_releases/orcid.html" alt="Nature Publish Group: NPG integrates ORCID identifiers" title="Nature Publish Group: NPG integrates ORCID identifiers" target="_blank">Nature</a> 以及 <a href="http://www.elsevier.com/about/press-releases/science-and-technology/elsevier-joins-orcid-in-announcing-launch-of-orcid-registry" alt="Elsevier Press Release: Elsevier Joins ORCID in Announcing Launch of ORCID Registry" title="Elsevier Press Release: Elsevier Joins ORCID in Announcing Launch of ORCID Registry" target="_blank">Elsevier</a> 所出版的刊物正在利用 ORCID 來簡化研究者使用投審稿系統時的資料管理方式。ORCID 也能自這些不同的服務去蒐集研究人員的研究著作，以利作者研究計量（Author-Level Metrics）的計算 ...</p>
+
+				<!-- Button -->
+				<a href="http://ifii-enews.blogspot.tw/2014/05/orcid.html" alt="Library Watch: 你現在就該知道關於 ORCID 的十件事" title="Library Watch: 你現在就該知道關於 ORCID 的十件事">
+					<div class="ui basic inverted animated button">
+						<div class="visible content">閱讀全文</div>
+						<div class="hidden content"><i class="right arrow icon"></i></div>
+					</div>
+				</a>
+
+				<!-- Divider -->
+				<div class="ui inverted section divider"></div>
+
+				<!-- Sub Title -->
+				<h3 class="ui header">更多相關文章</h3>
+
+				<!-- Article List / Start -->
+				<div class="ui inverted animated selection list">
+					<a href="http://tul.blog.ntu.edu.tw/archives/10775" alt="臺大圖書館參考部落格: 在浩瀚學術之海，明確辨認您的所在－－ORCID個人學術貢獻獨一無二的數位辨識碼" title="臺大圖書館參考部落格: 在浩瀚學術之海，明確辨認您的所在－－ORCID個人學術貢獻獨一無二的數位辨識碼">
+						<div class="item">
+							在浩瀚學術之海，明確辨認您的所在－－ORCID個人學術貢獻獨一無二的數位辨識碼
+							<div class="right floated">Dec 10, 2013</div>
+						</div>
+					</a>
+					<a href="http://ifii-enews.blogspot.tw/2013/10/orcid.html" alt="Library Watch: ORCID - 學術研究共享未來趨勢" title="Library Watch: ORCID - 學術研究共享未來趨勢">
+						<div class="item">
+							ORCID - 學術研究共享未來趨勢
+							<div class="right floated">Oct 7, 2013</div>
+						</div>
+					</a>
+				</div>
+				<!-- Article List / End -->
+			</div>
+			<!-- Section Intro / End -->
+
+			<!-- Signup Form / Start -->
+			<div class="six wide column">
+				<div id="mc_embed_signup" class="ui secondary form segment">
+
+					<!-- MailChimp Signup Form Integration / Start -->
+					<form action="http://flysheetmed.us8.list-manage.com/subscribe/post?u=9ddb7ede3b89b27501c8aef71&amp;id=2491e63f61" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+					<!-- Form Title -->
+					<h3 class="ui header">最新資訊報你知！</h3>
+
+					<!-- Form Text -->
+					<p>您對於如何應用與整合 ORCID 有興趣嗎？別錯過我們不定時寄送的最新資訊！</p>
+
+					<!-- Form Field -->
+					<div class="field">
+						<div class="ui left icon action input">
+							<i class="user icon"></i>
+							<input id="mce-EMAIL" class="required email" name="EMAIL" value="" type="email" placeholder="name@email.com">
+
+							<!-- For Bot Signups / Start -->
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>
+							<!-- For Bot Signups / End -->
+
+							<input id="mc-embedded-subscribe" class="ui teal submit button" type="submit" value="Subscribe" name="subscribe" style="">
+						</div>
+					</div>
+
+					</form>
+					<!-- MailChimp Signup Form Integration / Start -->
+
+					<!-- Error Message -->
+					<div class="ui error message"></div>
+				</div>
+			</div>
+			<!-- Signup Form / End -->
+
+		</div>
+		<!-- Section Content / End -->
+
+	</div>
+	<!-- Signup Section / Ends -->
+
+	<!-- Showcase Section / Start -->
+	<div class="ui page grid stackable segment">
+
+		<!-- Showcase Title / Start -->
+		<div class="row">
+			<div class="column">
+				<!-- Title -->
+				<h1 class="center aligned ui header">成功案例</h1>
+				<!-- Icon -->
+				<div class="ui horizontal divider"><i class="checkmark icon"></i></div>
+			</div>
+		</div>
+		<!-- Showcase Title / End -->
+
+		<!-- Showcase Logo / Start -->
+		<div class="center seven column aligned row">
+			<div class="column">
+				<div class="ui fade reveal">
+					<img class="visible content" src="images/ntucm-logo.png">
+					<img class="hidden content ui image circular" src="images/ntucm-logo-fade.png">
+				</div>
+			</div>
+		</div>
+		<!-- Showcase Logo / End -->
+
+	</div>
+	<!-- Showcase Section / End -->
+
+	<!-- Footer Section / Start -->
+	<div class="ui inverted teal page grid segment">
+
+		<!-- Sitemap / Start -->
+		<div class="ten wide column">
+ 			<div class="ui two column stackable grid">
+				<div class="column">
+					<div class="ui header">業務聯繫</div>
+					<p><i class="user icon"></i> 業務經理 高郁傑&nbsp;&nbsp;<i class="phone icon"></i> #330<br>
+					<i class="mail icon"></i> georgekao@flysheet.com.tw</p>
+				</div>
+				<div class="column">
+					<div class="ui header">專案諮詢</div>
+					<p><i class="user icon"></i> 專案專員 唐宏瑞&nbsp;&nbsp;<i class="phone icon"></i> #343<br>
+					<i class="mail icon"></i> clementtang@flysheet.com.tw</p>
+				</div>
+			</div> 
+		</div>
+		<!-- Sitemap / End -->
+
+		<!-- Contact Information / Start -->
+		<div class="six wide left floated aligned column">
+			<h3 class="ui header">飛資得醫學資訊</h3>
+			<p><i class="phone icon"></i> 02-2658-2223</p>
+			<p><a href="http://goo.gl/AtaUXv" alt="facebook 粉絲專頁" title="facebook 粉絲專頁"><i class="facebook icon inverted circular"></i></a> <a href="http://goo.gl/1p3MLB"><i class="twitter icon inverted circular"></i></a> <a href="http://goo.gl/CNJtfi" alt="官方網站" title="官方網站"><i class="home icon inverted circular"></i></a></p>
+		</div>
+		<!-- Contact information / End -->
+
+	</div>
+	<!-- Footer Section / End -->
+
+</body>
+
 </html>
