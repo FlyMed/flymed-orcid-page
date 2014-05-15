@@ -19,6 +19,172 @@ body {
 }
 
 /*******************************
+           Menu Variations
+*******************************/
+/*-------------------
+       Colors
+--------------------*/
+.ui.menu .flymed.active.item,
+.ui.flymed.menu .active.item {
+  border-color: #029676 !important;
+  color: #029676 !important;
+}
+/*--------------
+ Inverted Colors
+---------------*/
+/*--- Inverted Colors  ---*/
+.ui.inverted.flymed.menu {
+  background-color: #029676;
+}
+.ui.inverted.flymed.pointing.menu .active.item:after {
+  background-color: #029676;
+}
+
+/*******************************
+          Basic Icon Variations
+*******************************/
+/*-------------------
+       Colors
+--------------------*/
+i.flymed.basic.icon {
+  color: #029676 !important;
+}
+/*-------------------
+   Inverted Colors
+--------------------*/
+i.inverted.flymed.basic.icon {
+  background-color: #029676 !important;
+  color: #FFFFFF !important;
+}
+
+/*******************************
+            Button Variations
+*******************************/
+/*-------------------
+       Colors
+--------------------*/
+/*--- flymed ---*/
+.ui.flymed.buttons .button,
+.ui.flymed.button {
+  background-color: #029676;
+  color: #FFFFFF;
+}
+.ui.flymed.buttons .button:hover,
+.ui.flymed.button:hover,
+.ui.flymed.buttons .active.button,
+.ui.flymed.button.active {
+  background-color: #009A93;
+  color: #FFFFFF;
+}
+.ui.flymed.buttons .button:active,
+.ui.flymed.button:active {
+  background-color: #00847E;
+  color: #FFFFFF;
+}
+
+/*******************************
+            Header Variations
+*******************************/
+/*-------------------
+       Colors
+--------------------*/
+.ui.flymed.dividing.header {
+  border-bottom: 3px solid #029676;
+}
+/*-------------------
+   Inverted Colors
+--------------------*/
+.ui.inverted.flymed.header {
+  background-color: #029676 !important;
+  color: #FFFFFF !important;
+}
+
+/*******************************
+            Ivon Variations
+*******************************/
+/*-------------------
+       Colors
+--------------------*/
+i.flymed.icon {
+  color: #029676 !important;
+}
+/*-------------------
+   Inverted Colors
+--------------------*/
+i.inverted.flymed.icon {
+  background-color: #029676 !important;
+  color: #FFFFFF !important;
+}
+
+/*******************************
+            Label Variations
+*******************************/
+/*-------------------
+       Colors
+--------------------*/
+/*--- flymed ---*/
+.ui.flymed.labels .label,
+.ui.flymed.label {
+  background-color: #029676 !important;
+  border-color: #029676 !important;
+  color: #FFFFFF !important;
+}
+.ui.labels .flymed.label:before,
+.ui.flymed.labels .label:before,
+.ui.flymed.label:before {
+  background-color: #029676 !important;
+}
+/* Hover */
+a.ui.flymed.labels .label:hover,
+.ui.flymed.labels a.label:hover,
+a.ui.flymed.label:hover {
+  background-color: #009A93 !important;
+  border-color: #009A93 !important;
+  color: #FFFFFF !important;
+}
+.ui.labels a.flymed.label:hover:before,
+.ui.flymed.labels a.label:hover:before,
+a.ui.flymed.label:hover:before {
+  background-color: #009A93 !important;
+}
+/* Corner */
+.ui.flymed.corner.label,
+.ui.flymed.corner.label:hover {
+  background-color: transparent !important;
+}
+/* Ribbon */
+.ui.flymed.ribbon.label {
+  border-color: #009A93 !important;
+}
+
+/*******************************
+         Progress Bar Variations
+*******************************/
+/*--------------
+     Colors
+---------------*/
+.ui.flymed.progress .bar {
+  background-color: #029676;
+}
+
+/*******************************
+            Segment Variations
+*******************************/
+/*-------------------
+       Colors
+--------------------*/
+.ui.flymed.segment {
+  border-top: 0.2em solid #029676;
+}
+/*-------------------
+   Inverted Colors
+--------------------*/
+.ui.inverted.flymed.segment {
+  background-color: #029676 !important;
+  color: #FFFFFF !important;
+}
+
+/*******************************
           UI Overrides
 *******************************/
 
@@ -68,6 +234,37 @@ p a {
   font-weight: bold;
 }
 
+/*-------------------
+       Social
+--------------------*/
+/* Facebook */
+i.facebook.icon {
+  background-color: #3B579D;
+  color: #FFFFFF;
+}
+i.facebook.icon:hover {
+  background-color: #3A59A9;
+  color: #FFFFFF;
+}
+/* Twitter */
+i.twitter.icon {
+  background-color: #4092CC;
+  color: #FFFFFF;
+}
+i.twitter.icon:hover {
+  background-color: #399ADE;
+  color: #FFFFFF;
+}
+/* Homepage */
+i.home.icon {
+  background-color: #CC181E;
+  color: #FFFFFF;
+}
+i.home.icon:hover {
+  background-color: #DF0209;
+  color: #FFFFFF;
+}
+
 /*******************************
             Global
 *******************************/
@@ -82,7 +279,7 @@ p a {
 
 .ui.page.grid.segment {
   padding-top: 3.5rem;
-  padding-bottom: 6rem;
+  padding-bottom: 3.5rem;
 }
 
 .masthead.segment {
@@ -90,7 +287,8 @@ p a {
   -webkit-background-size: cover;
   background-size: cover;
   margin: 0em;
-  padding-top: 4rem;
+  padding-top: 2rem !important;
+  padding-bottom: 6rem !important;
   overflow: hidden;
   -webkit-box-shadow: 0 -20px 10px 0 rgba(0, 0, 0, 0.1) inset !important;
   box-shadow: 0 -20px 10px 0 rgba(0, 0, 0, 0.1) inset !important;
@@ -141,6 +339,7 @@ p a {
 /* Mobile Only */
 
 @media only screen and (max-width : 768px) {
+
   .ui.page.grid.segment {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -161,15 +360,16 @@ p a {
   .masthead.segment {
     -webkit-background-size: auto;
     background-size: auto;
+    padding-bottom: 6rem !important;
   }
 
   .masthead.segment .information {
-    margin-left: 190px;
+    margin-left: 270px;
   }
 
   .masthead.segment .image {
-    bottom: -65px;
-    width: 150px;
+    bottom: -105px;
+    width: 260px;
   }
 
   .masthead.segment .button {

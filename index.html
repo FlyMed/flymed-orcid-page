@@ -145,7 +145,7 @@
 						顧問規劃 
 					</div>
 					<p>提供國內外成功案例分析、現有系統環境掃描、協助與 ORCID 官方聯繫，並依照您機構的需求規劃最適合的方案。</p>
-					<p><a class="ui teal right labeled icon button" href="#">案例分享 <i class="right long arrow icon"></i></a></p>
+					<!-- <p><a class="ui red right labeled icon button" href="#">案例分享 <i class="right long arrow icon"></i></a></p> -->
 				</div>
 
 				<!-- Column 2 -->
@@ -155,7 +155,7 @@
 						技術服務
 					</div>
 					<p>提供自 API 應用實例、網頁嵌入小工具至完全客製化系統開發等各種整合應用服務，協助您降低開發成本。</p>
-					<p><a class="ui teal right labeled icon button" href="#">服務方案 <i class="right long arrow icon"></i></a></p>
+					<!-- <p><a class="ui red right labeled icon button" href="#">服務方案 <i class="right long arrow icon"></i></a></p> -->
 				</div>
 
 				<!-- Column 3 -->
@@ -165,7 +165,7 @@
 						效益分析
 					</div>
 					<p>有效掌握您機構內的學術產出與研究人員動態，加強學術成果曝光並提升學術研究效益與競爭力。</p>
-					<p><a class="ui teal right labeled icon button" href="#">檢視成果 <i class="right long arrow icon"></i></a></p>
+					<!-- <p><a class="ui red right labeled icon button" href="#">檢視成果 <i class="right long arrow icon"></i></a></p> -->
 				</div>
 
 			</div>
@@ -180,7 +180,10 @@
 		<!-- Section Title -->
 		<div class="row">
 			<div class="column">
+				<!-- Title -->
 				<h1 class="center aligned ui header">本月最新</h1>
+				<!-- Icon -->
+				<div class="ui horizontal inverted divider"><i class="bullhorn inverted icon"></i></div>
 			</div>
 		</div>
 		
@@ -230,6 +233,45 @@
 			</div>
 			<!-- Section Intro / End -->
 
+			<!-- Validation for Signup Form / Start -->
+			<script type="text/javascript">
+				$(document).ready(function () {
+				    $('.ui.dropdown').dropdown();
+
+				    $('.ui.form').form({
+				        NAME: {
+				            identifier: 'NAME',
+				            rules: [{
+				                type: 'empty',
+				                prompt: '請填寫您的姓名'
+				            }]
+				        },
+				        ORG: {
+				            identifier: 'ORG',
+				            rules: [{
+				                type: 'empty',
+				                prompt: '請填寫您的單位'
+				            }]
+				        },
+				        EMAIL: {
+				            identifier: 'EMAIL',
+				            rules: [{
+				                type: 'empty',
+				                prompt: '請填寫您的 EMAIL'
+				            }, {
+								type   : 'email',
+								prompt : '請填寫有效的 EMAIL'
+							}]
+				        }
+				    }, {
+				        inline: true,
+				        on: 'blur',
+				        transition: 'fade down'
+				    });
+				});
+			</script>
+			<!-- Validation for Signup Form / End -->
+
 			<!-- Signup Form / Start -->
 			<div class="six wide column">
 				<div id="mc_embed_signup" class="ui secondary form segment">
@@ -238,7 +280,7 @@
 					<form action="http://flysheetmed.us8.list-manage.com/subscribe/post?u=9ddb7ede3b89b27501c8aef71&amp;id=2491e63f61" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
 					<!-- Form Title -->
-					<h3 class="ui header">最新 ORCID 資訊報你知！</h3>
+					<h2 class="ui header">最新 ORCID 資訊報你知！</h2>
 
 					<!-- Form Text -->
 					<p>您對於如何應用與整合 ORCID 有興趣嗎？別錯過我們不定時寄送的最新資訊！</p>
@@ -246,7 +288,7 @@
 					<!-- Form Field -->
 					<div class="field">
 						<div class="ui left labeled icon input">
-							<input id="mce-NAME" type="text" name="NAME" placeholder="姓名">
+							<input id="NAME" type="text" name="NAME" placeholder="姓名">
 							<i class="user icon"></i>
 							<div class="ui corner label">
 								<i class="icon asterisk"></i>
@@ -256,7 +298,7 @@
 
 					<div class="field">
 						<div class="ui left labeled icon input">
-							<input id="mce-ORG" type="text" name="ORG" placeholder="單位">
+							<input id="ORG" type="text" name="ORG" placeholder="單位">
 							<i class="building icon"></i>
 							<div class="ui corner label">
 								<i class="icon asterisk"></i>
@@ -266,7 +308,7 @@
 
 					<div class="field">
 						<div class="ui left labeled icon input">
-							<input id="mce-EMAIL" name="EMAIL" value="" type="email" placeholder="name@email.com">
+							<input id="email" name="EMAIL" value="" type="email" placeholder="name@email.com">
 							<i class="mail icon"></i>
 							<div class="ui corner label">
 								<i class="icon asterisk"></i>
@@ -288,7 +330,8 @@
 					</form>
 					<!-- MailChimp Signup Form Integration / End -->
 
-					<div class="ui error message"></div>
+					<!-- Error Message -->
+					<div class="ui error message"><i class="warning icon"></i> 請您填寫正確資料再送出</div>
 
 				</div>
 			</div>
@@ -309,7 +352,7 @@
 				<!-- Title -->
 				<h1 class="center aligned ui header">成功案例</h1>
 				<!-- Icon -->
-				<div class="ui horizontal divider"><i class="checkmark icon"></i></div>
+				<div class="ui horizontal divider"><i class="star icon"></i></div>
 			</div>
 		</div>
 		<!-- Showcase Title / End -->
@@ -329,19 +372,21 @@
 	<!-- Showcase Section / End -->
 
 	<!-- Footer Section / Start -->
-	<div class="ui inverted teal page grid segment">
+	<div class="ui inverted flymed page grid segment">
 
 		<!-- Sitemap / Start -->
 		<div class="ten wide column">
  			<div class="ui two column stackable grid">
 				<div class="column">
-					<div class="ui header">業務聯繫</div>
-					<p><i class="user icon"></i> 業務經理 高郁傑&nbsp;&nbsp;<i class="phone icon"></i> #330<br>
+					<div class="ui header"><i class="chat outline icon"></i> 業務聯繫</div>
+					<p> 業務經理 高郁傑<br>
+					<i class="phone icon"></i> 02-2658-2223 #330<br>
 					<i class="mail icon"></i> georgekao@flysheet.com.tw</p>
 				</div>
 				<div class="column">
-					<div class="ui header">專案諮詢</div>
-					<p><i class="user icon"></i> 專案專員 唐宏瑞&nbsp;&nbsp;<i class="phone icon"></i> #343<br>
+					<div class="ui header"><i class="help icon"></i> 專案諮詢</div>
+					<p> 專案專員 唐宏瑞<br>
+					<i class="phone icon"></i> 02-2658-2223 #343<br>
 					<i class="mail icon"></i> clementtang@flysheet.com.tw</p>
 				</div>
 			</div> 
@@ -349,10 +394,14 @@
 		<!-- Sitemap / End -->
 
 		<!-- Contact Information / Start -->
-		<div class="six wide left floated aligned column">
+		<div class="six wide right floated aligned column">
 			<h3 class="ui header">飛資得醫學資訊</h3>
 			<p><i class="phone icon"></i> 02-2658-2223</p>
-			<p><a href="http://goo.gl/AtaUXv" alt="facebook 粉絲專頁" title="facebook 粉絲專頁"><i class="facebook icon inverted circular"></i></a> <a href="http://goo.gl/1p3MLB"><i class="twitter icon inverted circular"></i></a> <a href="http://goo.gl/CNJtfi" alt="官方網站" title="官方網站"><i class="home icon inverted circular"></i></a></p>
+			<p>
+				<a href="http://goo.gl/AtaUXv" target="_blank" alt="facebook 粉絲專頁" title="facebook 粉絲專頁"><i class="facebook icon inverted circular"></i></a>
+				<a href="http://goo.gl/1p3MLB" target="_blank" alt="Twitter" title="Twitter"><i class="twitter icon inverted circular"></i></a>
+				<a href="http://goo.gl/CNJtfi" target="_blank" alt="官方網站" title="官方網站"><i class="home icon inverted circular"></i></a>
+			</p>
 		</div>
 		<!-- Contact information / End -->
 
