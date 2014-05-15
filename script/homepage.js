@@ -66,7 +66,7 @@ jQuery(function( $ ){
   $.localScroll({
     target: '#home', // could be a selector or a jQuery object too.
     queue:true,
-    duration:1000,
+    duration:3000,
     hash:true,
     onBefore:function( e, anchor, $target ){
       // The 'this' is the settings object, can be modified
